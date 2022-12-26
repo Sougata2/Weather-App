@@ -1,0 +1,11 @@
+body{
+    background-image: url(../WeatherApp/bg.jpg);
+    background-size: cover;
+}
+#weather-stats{
+    color: white;
+}
+#weather-stats td{
+    color: white;
+    font-weight: bold;
+}
