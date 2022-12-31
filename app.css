@@ -1,6 +1,6 @@
 body{
     background-image: url(bg.jpg);
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
 }
 @media (min-width: 800px){
