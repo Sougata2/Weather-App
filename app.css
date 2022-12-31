@@ -1,11 +1,27 @@
 body{
     background-image: url(bg.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-#weather-stats{
-    color: white;
+@media (min-width: 800px){
+    body{
+        /* Your styling goes here */
+        background-size: 100vw 100vh;
+    }
 }
-#weather-stats td{
-    color: white;
+.img-fluid{
+    max-width: 50%;
+    margin: auto;
+    height: auto;
+}
+.col{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.weather-description{
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.temperature{
     font-weight: bold;
 }
