@@ -1,12 +1,16 @@
 const cityName = ""
 const showDelhi = document.querySelector('.show-delhi')
+const showNoida = document.querySelector('.show-noida')
 const showKolkata = document.querySelector('.show-kolkata')
 const showBangalore = document.querySelector('.show-bangalore')
 const cityNameElement = document.querySelectorAll('.city-name')
 const searchCityBtn = document.querySelector('#search-city')
 const KELVIN = 273.15
 
-
+showNoida.addEventListener('click', function(event){
+  event.preventDefault()
+  getGeoCode("noida")
+})
 showDelhi.addEventListener('click', function(event){
     event.preventDefault()
     getGeoCode("delhi")
@@ -64,8 +68,6 @@ function getGeoCode(city){
   })
   .catch((err) => console.error(err))
 }
-
-getGeoCode(cityName)
 
 
 const options = {
