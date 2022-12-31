@@ -1,4 +1,4 @@
-const cityName = "noida"
+const cityName = ""
 const showDelhi = document.querySelector('.show-delhi')
 const showKolkata = document.querySelector('.show-kolkata')
 const showBangalore = document.querySelector('.show-bangalore')
