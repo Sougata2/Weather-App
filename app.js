@@ -30,12 +30,23 @@ searchCityBtn.addEventListener('click', function(event){
   getGeoCode(document.querySelector('#city-input').value);
 })
 
+function showLoader(){
+  document.querySelector('.spinner-border').classList.remove('hidden')
+  document.querySelector('.card').classList.add('hidden')
+}
+
+function hideLoader(){
+  document.querySelector('.spinner-border').classList.add('hidden')
+  document.querySelector('.card').classList.remove('hidden')
+}
 
 /* OPEN WEATHER API */
 function getWeather(lat, lon){
+  showLoader()
   fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=b66275312722953c97e7418fd1b405c4`)
   .then((response) => response.json())
   .then((response) => {
+    hideLoader()
     console.log(response)
     const min_temp = response.main.temp_min - KELVIN
     const max_temp = response.main.temp_max - KELVIN

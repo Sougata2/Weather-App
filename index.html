@@ -86,33 +86,35 @@
       </div>
     </nav>
 
-    <div class="container py-5">
+    <!-- Weather Card -->
+    <div class="container py-5" style="text-align: center;">
+      <div class="spinner-border text-light hidden" role="status" style="width: 10rem; height: 10rem;"></div>
       <div class="card" style="width: fit-content; margin: auto">
-        <div class="card-body">
-          <h5 class="card-title city-name">Card title</h5>
-        </div>
-        <img src="..." class="card-img-top img-fluid" alt="..." />
-        <div class="container row">
-          <div class="col weather-description"></div>
-          <div class="col temperature"></div>
-        </div>
-        
-        <div class="card-body row">
-          <div class="col">
-            <i class="fa-regular fa-sun"></i> <span class="max-temp"></span>
+          <div class="card-body" style="text-align: left;">
+            <h5 class="card-title city-name">Card title</h5>
           </div>
-          <div class="col">
-            <i class="fa-solid fa-moon"></i> <span class="min-temp"></span>
+          <img src="..." class="card-img-top img-fluid" alt="..." />
+          <div class="container row">
+            <div class="col weather-description"></div>
+            <div class="col temperature"></div>
           </div>
-          <div class="row py-3">
+          
+          <div class="card-body row">
             <div class="col">
-              <i class="fa-solid fa-droplet"></i> <span class="humidity"></span>
+              <i class="fa-regular fa-sun"></i> <span class="max-temp"></span>
             </div>
             <div class="col">
-              <i class="fa-solid fa-eye"></i> <span class="visibility"></span>
+              <i class="fa-solid fa-moon"></i> <span class="min-temp"></span>
+            </div>
+            <div class="row py-3">
+              <div class="col">
+                <i class="fa-solid fa-droplet"></i> <span class="humidity"></span>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-eye"></i> <span class="visibility"></span>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
     <script
