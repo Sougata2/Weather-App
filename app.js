@@ -31,12 +31,14 @@ searchCityBtn.addEventListener('click', function(event){
 })
 
 function showLoader(){
-  document.querySelector('.spinner-border').classList.remove('hidden')
+  document.querySelector('.loader').classList.remove('hidden')
+  document.querySelector('.loader-text').classList.remove('hidden')
   document.querySelector('.card').classList.add('hidden')
 }
 
 function hideLoader(){
-  document.querySelector('.spinner-border').classList.add('hidden')
+  document.querySelector('.loader').classList.add('hidden')
+  document.querySelector('.loader-text').classList.add('hidden')
   document.querySelector('.card').classList.remove('hidden')
 }
 
